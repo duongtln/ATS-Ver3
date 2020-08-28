@@ -1,0 +1,75 @@
+section.section.school {
+    padding: 30px 0;
+    position: relative;
+}
+
+.materials {
+    background-image: radial-gradient(115% 80% at top left, transparent 90%, #fff 95.5%), linear-gradient(to right bottom, #39df9c, #3adb89, #40d675, #48d160, #51cc48);
+    height: 300px;
+}
+
+.materials:hover {
+    box-shadow: 10px 10px 20px #cec7c7;
+}
+
+span.content-item {
+    background-color: #f0ffffde;
+    box-shadow: 10px 10px 10px #abababcc;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+h4.card-title.text-center.source-name {
+    margin-top: 15px;
+    font-family: Nunito Sans, serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+#school-bg {
+    background-image: url([[pix:theme|school]]);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0px;
+}
+
+#wave-school {
+    background-image: url("../pix/pngwave.png");
+    background-repeat: no-repeat;
+    background-size: 100% 132%;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.school .container .card-desk {
+    height: 300px;
+}
+/* 
+section.section.school {
+    height: 60vh!important;
+} */
+
+.nav-link {
+    color: #008347!important;
+}
+
+.block-sources.materials {
+    border: none;
+    box-shadow: 10px 5px 15px #dbd5d5;
+    border-radius: 10px;
+}
