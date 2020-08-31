@@ -350,25 +350,22 @@ div#action-menu-user svg {
 .function-search {
     width: 420px;
 }
+input#selector-mobile:focus {
+    outline: none;
+    box-shadow: none;
+}
 input#selector-mobile {
     font-size: 17px;
     padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 /* Mobile */
 @media (max-width: 767px) {
     button.navbar-toggler.collapsed {
         font-size: 20px;
-    }
-
-    a.navbar-brand.ats-logo-fe {
-        background-size: 80%;
-    }
-
-    img#logo-tc {
-        width: 40px;
-        height: 45px;
-        order: 4;
     }
 
     .ats-function .navbar-sticky {
@@ -438,7 +435,7 @@ ul.list-group.notification {
 
 li.list-group-item.item-noti {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -452,6 +449,7 @@ li.list-group-item.item-noti {
     justify-content: center;
     align-items: flex-end;
     margin-left: 10px;
+    margin-left: 25px;
 }
 
 li.list-group-item.item-noti:hover {

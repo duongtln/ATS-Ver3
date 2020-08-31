@@ -1,0 +1,116 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* HEADER */
+    #header a.navbar-brand.ats-logo-fe {
+        order: 0;
+        flex-basis: 70%;
+        text-align: start;
+    }
+
+    #header button.navbar-toggler {
+        order: 3;
+        flex-basis: 15%;
+        font-size: 25px;
+        margin-top: .5rem !important;
+        outline: none;
+    }
+
+    div#navbarCollapse {
+        order: 3;
+    }
+
+    ul.navbar-nav.ats-menu-primary.mr-auto {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        line-height: 25px;
+        flex-direction: row;
+    }
+
+    #header .ats-function.mt-2.mt-md-0 {
+        order: 2;
+        flex-basis: 53%;
+        margin-left: 15px;
+    }
+
+    #header img#logo-tc {
+        order: 1;
+    }
+
+    /* Function */
+    a.dropbtn {
+        position: relative;
+    }
+
+    .dropdown-content.notifi {
+        right: 0;
+        left: -20px;
+        width: 55vh;
+        height: 45vh;
+    }
+
+    .notifi.dropdown-content:after, .notifi.dropdown-content:before {
+        left: 24px!important;
+    }
+
+    ul.list-group.notification {
+        width: 54vh!important;
+        overflow-y: scroll;
+        height: 35vh;
+        margin-left: 5px!important;
+    }
+
+    .function-search.dropdown-content {
+        right: 0;
+        left: -100px;
+        width: 55vh;
+    }
+
+    .function-search.dropdown-content:after, .function-search.dropdown-content:before {
+        left: 27%!important;
+    }
+
+    div#action-menu-user {
+        right: 0;
+        left: -180px;
+        width: 55vh;
+    }
+
+    #action-menu-user:after, #action-menu-user:before {
+        left: 47%!important;
+    }
+
+    #header .ats-menu-primary>li>a {
+        font-size: 12px!important;
+    }
+
+    /* SLIDER */
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    /* TOOLS */
+    .tools .container-fluid {
+        width: 100% !important;
+    }
+
+    .tools .tools_content {
+        flex-wrap: wrap;
+    }
+
+    .tools__content__option__item div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tools__content__option__item div#my-course,
+    .tools__content__option__item div#catalog,
+    .tools__content__option__item div#coaching,
+    .tools__content__option__item div#product, 
+    .tools__content__option__item div#roadmap {
+        font-size: 20px;
+    }
+
+}

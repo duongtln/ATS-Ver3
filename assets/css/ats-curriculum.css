@@ -5,7 +5,7 @@
 }
 
 #curriculum-bg {
-	background-image: url([[pix:theme|curriculumn]]);
+	background-image: url("../images/curriculumn.png");
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 0;

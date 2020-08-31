@@ -1,6 +1,15 @@
 section.section.school {
     padding: 30px 0;
     position: relative;
+    margin-top: 90px;
+    height: 100vh;
+}
+
+.block-school {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .materials {
@@ -32,7 +41,7 @@ h4.card-title.text-center.source-name {
 }
 
 #school-bg {
-    background-image: url([[pix:theme|school]]);
+    background-image: url("../images/school2.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     opacity: 0.5;
@@ -44,7 +53,7 @@ h4.card-title.text-center.source-name {
 }
 
 #wave-school {
-    background-image: url("../pix/pngwave.png");
+    background-image: url("../images/pngwave.png");
     background-repeat: no-repeat;
     background-size: 100% 132%;
     opacity: 0.5;
