@@ -1,6 +1,16 @@
 .tools {
     padding: 30px 0;
     position: relative;
+    height: 100vh;
+}
+
+.wrap-content .wrap-block{
+    display: flex;
+    min-height: 100vh;
+} 
+
+.slider-wrap__left {
+    margin: auto;
 }
 
 .tools__content {

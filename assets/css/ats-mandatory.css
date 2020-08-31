@@ -51,6 +51,13 @@
 section.mandatory {
     position: relative;
     padding: 30px 0;
+    height: 100vh;
+}
+
+section.mandatory .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #mandatory-bg {
