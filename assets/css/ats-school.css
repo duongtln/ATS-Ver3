@@ -1,8 +1,7 @@
 section.section.school {
-    padding: 30px 0;
     position: relative;
-    margin-top: 90px;
-    height: 100vh;
+    margin-top: 75px;
+    height: 85vh;
 }
 
 .block-school {
@@ -41,10 +40,10 @@ h4.card-title.text-center.source-name {
 }
 
 #school-bg {
-    background-image: url("../images/school2.png");
+    background-image: url(../images/school2.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    opacity: 0.5;
+    background-size: 100% 70%;
+    opacity: 0.3;
     position: absolute;
     right: 0;
     left: 0;
@@ -53,25 +52,25 @@ h4.card-title.text-center.source-name {
 }
 
 #wave-school {
-    background-image: url("../images/pngwave.png");
+    /* background-image: url("../images/bg2.svg"); */
     background-repeat: no-repeat;
-    background-size: 100% 132%;
-    opacity: 0.5;
+    background-size: 100% 100%;
+    opacity: 1;
     position: absolute;
     right: 0;
     left: 0;
     top: 0;
     bottom: 0px;
     z-index: -1;
+    transform: scaleX(-1);
+    margin-top: -75px;
+    background-color: #f4f7f8;
+    background-image: linear-gradient(to bottom, #f4f7f8 0%, #f6f6f6 50%, rgb(255 255 255) 100%);
 }
 
 .school .container .card-desk {
     height: 300px;
 }
-/* 
-section.section.school {
-    height: 60vh!important;
-} */
 
 .nav-link {
     color: #008347!important;
