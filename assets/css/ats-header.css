@@ -53,11 +53,8 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: -.2px;
+    cursor: pointer;
 }
-
-/* #header .ats-menu-primary li.has-mega-menu>a.navbar-item { */
-    /* position: relative; */
-/* } */
 
 #header .ats-menu-primary .navbar-item.active {
     color: #008347;
@@ -110,31 +107,6 @@ ul.sub-menu {
     pointer-events: none;
 }
 
-#mege-sub-positon-two:after,
-#mege-sub-positon-two:before {
-    left: 10%;
-}
-
-#mege-sub-positon-three:after,
-#mege-sub-positon-three:before {
-    left: 17%;
-}
-
-#mege-sub-positon-four:after,
-#mege-sub-positon-four:before {
-    left: 23%;
-}
-
-#mege-sub-positon-five:after,
-#mege-sub-positon-five:before {
-    left: 35%;
-}
-
-#mege-sub-positon-six:after,
-#mege-sub-positon-six:before {
-    left: 45%;
-}
-
 .navbar-item:after {
     border-color: rgba(249, 249, 249, 0);
     border-bottom-color: #fff;
@@ -177,12 +149,6 @@ ul.sub-menu {
     left: calc(50% - 10px);
 }
 
-/* .sub-menu a.button-link {
-    margin-left: 20px;
-    color: #000;
-    text-transform: capitalize;
-} */
-
 #header .ats-menu-primary li.has-mega-menu ul.mega-menu>li>a {
     font-size: 1.8rem;
     color: #8e989a;
@@ -196,6 +162,7 @@ ul.sub-menu {
 
 .sub-menu a:hover {
     font-weight: 900;
+    color: #d99b9b;
 }
 
 #header .ats-menu-primary li.has-mega-menu ul.mega-menu>li>a.active,
@@ -214,10 +181,6 @@ ul.sub-menu {
         align-items: center;
         justify-content: space-between;
     }
-
-    /* #header .ats-menu-primary li.has-mega-menu ul.mega-menu { */
-        /* width: 70vw; */
-    /* } */
 }
 
 /* Right function */
@@ -229,13 +192,18 @@ ul.sub-menu {
 .ats-function .navbar-sticky {
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .ats-function .icon-func {
     font-size: 20px;
     color: #000000b5;
+    padding: 15px 35px;
+}
+
+li.switch-lang {
+    padding: 20px;
 }
 
 .lang {
@@ -281,7 +249,6 @@ div#action-menu-user svg {
 .dropdown-content:after,
 .dropdown-content:before {
     bottom: 100%;
-    left: 50%;
     border: solid transparent;
     content: " ";
     height: 0;
@@ -292,12 +259,17 @@ div#action-menu-user svg {
 
 .notifi.dropdown-content:after,
 .notifi.dropdown-content:before {
-    left: 77%!important;
+    left: 68%;
 }
 
 .function-search.dropdown-content:after,
 .function-search.dropdown-content:before {
-    left: 79%!important;
+    left: 71%;
+}
+
+.function-user.dropdown-content:after,
+.function-user.dropdown-content:before {
+    left: 30%;
 }
 
 .dropdown-content:after {
@@ -324,7 +296,21 @@ div#action-menu-user svg {
 .dropdown-content a {
     color: black;
     padding: 7px 15px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.noti-dot:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    background: #ff6877;
 }
 
 .dropdown:hover .dropdown-content {
@@ -360,6 +346,30 @@ input#selector-mobile {
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+.suggestion {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 420px;
+    justify-content: flex-start;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+span.suggestion-item {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.suggestion span.suggestion-item.badge-primary {
+    color: #544d4d;
+    background-color: #68df8c;
+}
+
+.suggestion span.suggestion-item.badge-primary:hover {
+    background-color: #31e868;
 }
 
 /* Mobile */
@@ -431,12 +441,17 @@ span.badge.badge-primary {
 
 ul.list-group.notification {
     width: 25em;
+    overflow-y: scroll;
+    max-height: 400px;
 }
 
 li.list-group-item.item-noti {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    cursor: pointer;
+    border-bottom: 1px solid #d8d8d85c;
+    font-weight: 400;
 }
 
 .w-12 {
@@ -467,12 +482,6 @@ li.list-group-item.item-noti.seen {
     border-bottom: 1px solid #d8d8d85c;
 }
 
-li.list-group-item.item-noti {
-    cursor: pointer;
-    border-bottom: 1px solid #d8d8d85c;
-	font-weight: 400;
-}
-
 .dropdown-content h5.ml-3 {
     padding: 10px;
     font-weight: 700;
@@ -484,4 +493,88 @@ ul.sub-menu {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+ul.list-group.notification li i.fad { 
+    font-size: 35px;
+    --fa-primary-opacity: 1.0;
+    --fa-secondary-opacity: 1;
+}
+
+ul.list-group.notification li i.fad.fa-exclamation-triangle { 
+    --fa-primary-color: #546141;
+    --fa-secondary-color: #7bda70;
+}
+
+ul.list-group.notification li i.fad.fa-exclamation-circle { 
+    --fa-primary-color: #7477c1;
+    --fa-secondary-color: #b7b6ff;
+}
+
+ul.list-group.notification li i.fa-envelope-open-text { 
+    --fa-primary-color: #26724c;
+    --fa-secondary-color: #e4ccd2;
+}
+
+ul.list-group.notification::-webkit-scrollbar {
+    width: 5px;
+    background: #dde6e8;
+}
+
+ul.list-group.notification::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #ccc;
+    background-color: #b5bec1;
+}
+
+ul.list-group.notification::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#header .ats-menu-primary li.has-mega-menu ul.mega-menu:after, #header .ats-menu-primary li.has-mega-menu ul.mega-menu:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#header .ats-menu-primary li.has-mega-menu ul.mega-menu:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+#header .ats-menu-primary li.has-mega-menu ul.mega-menu:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+#header .ats-menu-primary li.has-mega-menu ul.mega-menu.sub-menu-one:after, #header .ats-menu-primary li.has-mega-menu ul.mega-menu.sub-menu-one:before {
+    left: 16%;
+}
+
+#header .ats-menu-primary li.has-mega-menu ul.mega-menu.sub-menu-two:after, #header .ats-menu-primary li.has-mega-menu ul.mega-menu.sub-menu-two:before {
+    left: 21%;
+}
+
+#header .ats-menu-primary li.has-mega-menu ul.mega-menu.sub-menu-three:after, #header .ats-menu-primary li.has-mega-menu ul.mega-menu.sub-menu-three:before {
+    left: 27%;
+}
+
+div#particles-js {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .5;
 }
