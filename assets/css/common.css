@@ -469,11 +469,12 @@ textarea:focus {
 /* Scroll down */
 .container.scroll-down {
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .scroll-down .container {

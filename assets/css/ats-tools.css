@@ -6,6 +6,7 @@
 .wrap-content .wrap-block{
     display: flex;
     min-height: 100vh;
+    width: 100%;
 } 
 
 .slider-wrap__left {
