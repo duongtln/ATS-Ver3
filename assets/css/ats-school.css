@@ -1,7 +1,7 @@
 section.section.school {
     position: relative;
     margin-top: 75px;
-    height: 85vh;
+    min-height: 100vh;
 }
 
 .block-school {
@@ -87,26 +87,24 @@ h4.card-title.text-center.source-name {
 .block-school {
   width: 95%;
   position: relative;
-  max-width: 800px;
+  max-width: 875px;
   margin: auto;
   background: #fff;
   box-shadow: 0px 20px 30px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
-  height: 240px;
+  height: 210px;
   transition: all 0.3s;
   top: 5%;
 }
 
-.school-left {
-  float: left;
-  left: 10%;
+.school .school-left {
+  left: -10%;
 }
 
-.school-right {
-  float: right;
-  left: -10%;
-  margin-top: 40px;
+.school .school-right {
+  right: -10%;
+  margin-top: 25px;
 }
 
 .block-school-item {
@@ -120,9 +118,9 @@ h4.card-title.text-center.source-name {
   }
 }
 .block-school-title {
-  width: 300px;
+  width: 270px;
   flex-shrink: 0;
-  height: 170px;
+  height: 145px;
   background-image: linear-gradient(to right, #81b4c9, #34e89e);
   box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
   border-radius: 20px;

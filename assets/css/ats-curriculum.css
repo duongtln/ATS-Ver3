@@ -1,7 +1,7 @@
 .curriculum {
 	position: relative;
 	padding: 30px 0;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 #curriculum-bg {
