@@ -1,7 +1,8 @@
 section.section.school {
     position: relative;
-    margin-top: 75px;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .block-school {
