@@ -1,6 +1,7 @@
 section.section.school {
-    position: relative;
-    min-height: 100vh;
+	position: relative;
+    margin-top: 45px;
+    min-height: 45vh;
     display: flex;
     align-items: center;
 }
@@ -10,11 +11,16 @@ section.section.school {
     display: flex;
     justify-content: center;
     align-items: center;
+	padding: 20px;
+    margin-right: -35px;
+    margin-left: -35px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .materials {
     background-image: radial-gradient(115% 80% at top left, transparent 90%, #fff 95.5%), linear-gradient(to right bottom, #39df9c, #3adb89, #40d675, #48d160, #51cc48);
-    height: 300px;
+    height: 280px;
 }
 
 .materials:hover {
@@ -25,9 +31,8 @@ span.content-item {
     background-color: #f0ffffde;
     box-shadow: 10px 10px 10px #abababcc;
     color: #fff;
-    font-size: 14px;
-    vertical-align: middle;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 h4.card-title.text-center.source-name {
@@ -36,12 +41,12 @@ h4.card-title.text-center.source-name {
     font-size: 25px;
     font-weight: 600;
     text-align: center;
-    color: #fff;
+    color: #008347;
     letter-spacing: 0;
 }
 
 #school-bg {
-    background-image: url(../images/school2.png);
+    background-image: url([[pix:theme|school]]);
     background-repeat: no-repeat;
     background-size: 100% 70%;
     opacity: 0.3;
@@ -50,6 +55,18 @@ h4.card-title.text-center.source-name {
     left: 0;
     top: 0;
     bottom: 0px;
+}
+
+.school-of-sale-img {
+	background-image: url([[pix:theme|school-of-sales]]);
+	width: 150px;
+    height: 150px;
+}
+
+.school-of-recovery-img {
+	background-image: url([[pix:theme|school-of-recovery]]);
+	width: 150px;
+    height: 150px;
 }
 
 #wave-school {
@@ -85,7 +102,7 @@ h4.card-title.text-center.source-name {
 
 
 
-.block-school {
+/* .block-school {
   width: 95%;
   position: relative;
   max-width: 875px;
@@ -97,7 +114,7 @@ h4.card-title.text-center.source-name {
   height: 210px;
   transition: all 0.3s;
   top: 5%;
-}
+} */
 
 .school .school-left {
   left: -10%;
@@ -182,3 +199,112 @@ h4.card-title.text-center.source-name {
 .block-school-item-link:hover {
   color: #000;
 }
+
+div#particles-js {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+    opacity: .5;
+}
+
+/* Version 2 */
+
+.card-circle{
+    text-align: center;
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #81b4c9, #34e89e);
+    box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+    border: 0px solid transparent;
+    color: #fff;
+    padding: 50px;
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+}
+
+ .card-circle .card-title{
+    font-weight:600;
+     font-size:26px;
+}
+
+ .card-circle .card-icon div{
+     display:block;
+}
+
+.icon-shool-of-sale {
+	background-image: url([[pix:theme|school-of-sales]]);
+	transition: all ease-in-out 0.2s;
+	width: 150px;
+    height: 150px;
+}
+
+.icon-shool-of-recovery {
+	background-image: url([[pix:theme|school-of-recovery]]);
+	transition: all ease-in-out 0.2s;
+	width: 150px;
+    height: 150px;
+}
+
+.card-circle .card-icon div,
+.card-circle .card-body .card-title,
+.card-circle{
+    transition: all .2s;
+}
+
+ .card-circle:hover{
+    border: 5px solid #8a9496;
+}
+ .card-circle:hover .icon-shool-of-sale,
+ .card-circle:hover .icon-shool-of-recovery,
+ .card-circle:hover .card-body {
+    transform: translateY(-50px);
+}
+
+ .card-circle:hover .icon-shool-of-sale,
+ .card-circle:hover .icon-shool-of-recovery {
+	width: 100px;
+	height: 100px;
+ }
+
+ .card-circle .school-item {
+	display: none;
+}
+
+.card-circle:hover .school-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 324px;
+    height: 215px;
+    justify-content: space-around;
+	transition: all .2s;
+}
+
+ @media only screen and (min-width: 1200px) {
+    .card-circle{
+        width:400px;
+        height:400px;
+    }
+    
+    .card-circle .card-icon div{
+       margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+   .card-circle{
+        width:340px;
+        height:340px;
+    }
+	
+	.card-circle .card-icon div{
+      margin-top: -25px;
+    }
+	
+    .card-circle:nth-child(2){
+        z-index:1;
+    }
+}
+

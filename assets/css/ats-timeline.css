@@ -1,21 +1,18 @@
-.col-lg-4.timeline-wrap__right {
-    /* margin-top: 20px; */
+.tools .timeline-wrap__right {
     border-radius: 10px;
-    /* box-shadow: 10px 10px 20px #7e7e7e;
-    background-color: #fff; */
     border: 1px solid #dfdfdf;
     padding: 10px;
-    margin: auto;
-    position: relative;
+	max-width: 32.333333%;
+	background-color: #fff;
 }
 
 /* Timeline */
-.timeline {
+.tools .timeline {
     list-style: none;
     position: relative;
 }
 
-.timeline:before {
+.tools .timeline:before {
     top: 40px;
     bottom: 0;
     position: absolute;
@@ -26,26 +23,26 @@
     margin-left: -1.5px;
 }
 
-.timeline .timeline-item {
+.tools .timeline .timeline-item {
     margin-bottom: 20px;
     position: relative;
 }
 
-h4.time-title {
+.tools h4.time-title {
     font-weight: 700;
 }
 
-.timeline .timeline-item:before,
-.timeline .timeline-item:after {
+.tools .timeline .timeline-item:before,
+.tools .timeline .timeline-item:after {
     content: "";
     display: table;
 }
 
-.timeline .timeline-item:after {
+.tools .timeline .timeline-item:after {
     clear: both;
 }
 
-.timeline .timeline-item .timeline-badge {
+.tools .timeline .timeline-item .timeline-badge {
     width: 45px;
     height: 45px;
     line-height: 52px;
@@ -94,18 +91,18 @@ h4.time-title {
     font-size: 20px;
 }
 
-.timeline-panel.text-center {
+.tools .timeline-panel.text-center {
     background-color: #b18cff !important;
     color: #fff;
 }
 
-.timeline .timeline-item .timeline-badge i,
-.timeline .timeline-item .timeline-badge .fa {
+.tools .timeline .timeline-item .timeline-badge i,
+.tools .timeline .timeline-item .timeline-badge .fa {
     top: 2px;
     left: 0px;
 }
 
-.timeline .timeline-item .timeline-panel {
+.tools .timeline .timeline-item .timeline-panel {
     position: relative;
     width: 90%;
     float: left;
@@ -117,21 +114,21 @@ h4.time-title {
     top: 5px;
 }
 
-.timeline .timeline-item .timeline-panel .timeline-title {
+.tools .timeline .timeline-item .timeline-panel .timeline-title {
     margin-top: 0;
     color: inherit;
 }
 
-.timeline .timeline-item .timeline-panel .timeline-body>p,
-.timeline .timeline-item .timeline-panel .timeline-body>ul {
+.tools .timeline .timeline-item .timeline-panel .timeline-body>p,
+.tools .timeline .timeline-item .timeline-panel .timeline-body>ul {
     margin-bottom: 0;
 }
 
-.timeline .timeline-item .timeline-panel .timeline-body>p+p {
+.tools .timeline .timeline-item .timeline-panel .timeline-body>p+p {
     margin-top: 5px;
 }
 
-.time {
+.tools .time {
     position: relative;
     width: 80%;
     float: left;
@@ -143,30 +140,30 @@ h4.time-title {
     left: -25px;
 }
 
-.lined .nav-link {
+.tools .lined .nav-link {
     border: none!important;
     border-bottom: 3px solid transparent!important;
 }
 
-.lined .nav-link:hover {
+.tools .lined .nav-link:hover {
     border: none!important;
     border-bottom: 3px solid transparent!important;
 }
 
-.lined .nav-link.active {
+.tools .lined .nav-link.active {
     background: none!important;
     color: #555!important;
-    border-color: #2b90d9!important;
+    border-color: #008345!important;
 }
 
 
 /* New Roandmap */
 
-.roadmap.container-fluid {
+.tools .roadmap.container-fluid {
     margin-top: 30px;
 }
 
-.roadmap .circle {
+.tools .roadmap .circle {
     font-weight: bold;
     padding: 11px 19px;
     border-radius: 50%;
@@ -177,86 +174,86 @@ h4.time-title {
     font-size: 20px;
 }
 
-.roadmap .block-roadmap.row {
+.tools .roadmap .block-roadmap.row {
 	display: flex;
 }
 
-.roadmap .block-roadmap.row .col-2 {
+.tools .roadmap .block-roadmap.row .col-2 {
 	display: inline-flex;
 	align-self: stretch;
 	align-items: center;
 	justify-content: center;
 }
 
-.roadmap .block-roadmap.row .col-2::after {
+.tools .roadmap .block-roadmap.row .col-2::after {
 	content: '';
 	position: absolute;
 	border-left: 3px solid #ED8D8D;
 	z-index: 1;
 }
 
-.roadmap .block-roadmap.row .col-2.bottom::after {
+.tools .roadmap .block-roadmap.row .col-2.bottom::after {
 	height: 50%;
 	left: 50%;
 	top: 50%;
 }
 
-.roadmap .block-roadmap.row .col-2.full-right::after {
+.tools .roadmap .block-roadmap.row .col-2.full-right::after {
 	height: 100%;
 	left: 45%;
 }
 
-.roadmap .block-roadmap.row .col-2.full-left::after {
+.tools .roadmap .block-roadmap.row .col-2.full-left::after {
 	height: 100%;
 	left: 50%;
 }
 
-.roadmap .block-roadmap.row .col-2.top::after {
+.tools .roadmap .block-roadmap.row .col-2.top::after {
 	height: 50%;
 	left: 50%;
 	top: 0;
 }
 
-.roadmap .timeline div {
+.tools .roadmap .timeline div {
 	padding: 0;
 	height: 40px;
 }
 
-.roadmap .timeline hr {
+.tools .roadmap .timeline hr {
 	border-top: 3px solid #ED8D8D;
 	margin: 0;
 	top: 17px;
 	position: relative;
 }
 
-.roadmap .timeline .col-2 {
+.tools .roadmap .timeline .col-2 {
 	display: flex;
 	overflow: hidden;
 }
 
-.roadmap .timeline .corner {
+.tools .roadmap .timeline .corner {
 	border: 3px solid #ED8D8D;
 	width: 100%;
 	position: relative;
 	border-radius: 15px;
 }
 
-.roadmap .timeline .top-left {
+.tools .roadmap .timeline .top-left {
 	left: 50%;
 	top: -50%;
 }
 
-.roadmap .timeline .right-bottom {
+.tools .roadmap .timeline .right-bottom {
 	left: -50%;
 	top: calc(50% - 3px);
 }
 
-.roadmap .timeline .top-right {
+.tools .roadmap .timeline .top-right {
 	left: -50%;
 	top: -50%;
 }
 
-.roadmap .timeline .left-bottom {
+.tools .roadmap .timeline .left-bottom {
 	left: 50%;
 	top: calc(50% - 3px);
 }
@@ -265,7 +262,7 @@ h4.time-title {
     font-size: 15px;
 }
 
-.block-roadmap h5 {
+.tools .block-roadmap h5 {
     font-size: 16px;
 }
 

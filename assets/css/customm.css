@@ -1,0 +1,142 @@
+.path-site li.activity>div, .path-course-view li.activity>div {
+    position: relative;
+    padding: 0 16px 0 0;
+	z-index: 1000;
+}
+.path-course-view .completionprogress {
+    display: block;
+    float: right;
+    height: 20px;
+    position: relative;
+	    z-index: 1000;
+}
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+    color: #555;
+    /* background-color: #fff; */
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.tab-content>.active, .pill-content>.active {
+    display: block;
+	opacity: 1;
+}
+.row.text-center {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+.block_myoverview .empty-placeholder-image-lg {
+    height: 125px;
+}
+a.btn.btn-default.active {
+    color: #008848;
+    font-weight: 600;
+}
+.skip,.skip-block{
+	display:none;
+}
+span.lessonbutton.standardbutton {
+    padding-right: 5px;
+}
+span.helptooltip a {
+    display: inline;
+}
+.vertical .singlebutton {
+    display: block;
+	margin-bottom: 6px;
+}
+.horizontal .singlebutton {
+    display: inline-block;
+}
+.box.branchbuttoncontainer.horizontal {
+    text-align: center;
+}
+.availabilityinfo {
+	/*ẩn tạm*/
+    display: none;
+}
+.dropdown-item.active, .dropdown-item:active {
+   
+    background-color: unset;
+}
+.block_myoverview .empty-placeholder-image-sm {
+    height: 50px;
+}
+/* .modal { */
+    /* display: block!important; */
+/* } */
+/*admin css start*/
+.filemanager, .filepicker, .file-picker {
+    font-size: 11px;
+}
+.dnduploadnotsupported-message {
+    display: none;
+}
+
+.filemanager .fp-restrictions {
+    text-align: right;
+}
+.filemanager, .filepicker, .file-picker {
+    font-size: 11px;
+}
+.filemanager .fp-restrictions {
+    text-align: right;
+}
+
+.filemanager, .filepicker, .file-picker {
+    font-size: 11px;
+}
+
+.filemanager .fp-navbar {
+    background: #f2f2f2;
+    border: 1px solid #bbb;
+    border-bottom: none;
+}
+
+.filemanager, .filepicker, .file-picker {
+    font-size: 11px;
+}
+
+.filemanager .fp-navbar {
+    background: #f2f2f2;
+    border: 1px solid #bbb;
+    border-bottom: none;
+}
+.filemanager-toolbar {
+    padding: 4px;
+    overflow: hidden;
+}
+.filepicker-filelist, .filemanager-container {
+    background: #fff;
+    clear: both;
+    overflow: auto;
+    border: 1px solid #160606;
+    min-height: 140px;
+    position: relative;
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+legend {
+	margin-bottom: 20px;
+	font-size: 21px;
+	border-bottom: 1px solid #e5e5e5;
+}
+iframe#resourceobject {
+    width: 100%!important;
+	height: 80vh !important;
+	max-height: unset !important;
+}
+
+@media screen and (max-width: 600px) {
+	iframe#resourceobject {
+		width: 100%!important;
+		height: 40vh !important;
+		max-height: unset !important;
+	}
+}
+/*admin css end*/

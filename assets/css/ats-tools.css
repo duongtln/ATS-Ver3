@@ -1,17 +1,9 @@
 .tools {
     position: relative;
-    min-height: 100vh;
-    margin: 35px 0px;
-}
-
-.wrap-content .wrap-block{
+    min-height: 50vh;
     display: flex;
-    min-height: 100vh;
-    width: 100%;
-} 
-
-.slider-wrap__left {
-    margin: auto;
+    align-items: center;
+	margin-bottom: 40px;
 }
 
 .tools__content {
@@ -61,6 +53,7 @@
 .tools__content__option__item div#my-course {
     background-color: #E5F6ED; 
     font-size: 40px;
+	position: relative;
 }
 
 .tools__content__option__item:hover div#my-course {
@@ -71,6 +64,7 @@
 .tools__content__option__item div#catalog {
     background-color: #FFF6DE;
     font-size: 40px;
+	position: relative;
 }
 
 .tools__content__option__item:hover div#catalog {
@@ -80,6 +74,7 @@
 .tools__content__option__item div#coaching {
     background-color: #DBEDFF;
     font-size: 40px;
+	position: relative;
 }
 
 .tools__content__option__item:hover div#coaching {
@@ -89,6 +84,7 @@
 .tools__content__option__item div#product {
     background-color: #FBFCDD;
     font-size: 40px;
+	position: relative;
 }
 
 .tools__content__option__item:hover div#product {
@@ -98,6 +94,7 @@
 .tools__content__option__item div#roadmap {
     background-color: #FFEDF1;
     font-size: 40px;
+	position: relative;
 }
 
 .tools__content__option__item:hover div#roadmap {
@@ -117,6 +114,22 @@
 .tools__content__option__item:hover h5 {
     color: #008347;
 }
+
+span.badge-tools {
+    font-size: 15px;
+    position: absolute;
+    background-color: #ff96a1;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    top: -5%;
+    right: -5%;
+}
+
+/* .tools__content__option__item:hover span.badge-tools { */
+
+/* } */
 
 i.fad.fa-book-reader {
     --fa-primary-opacity: 1.0;
@@ -201,65 +214,64 @@ img#svg-tools {
     padding: 0;
 }
 
-.tools .container-fluid {
-    position: relative;
-}
-
 .tools_content {
     border-radius: 10px;
     border: 1px solid #dfdfdf;
     padding: 10px;
+	background-color: #fff;
 }
 
 .img-fluid {
-    height: 300px!important;
+    height: auto;
+	width: 100%;
 }
 
-img.team-bg-dots {
+#tool-img-1 {
+	background-image: url([[pix:theme|tool-img-1]]);
     position: absolute;
-    bottom: 5%;
+    bottom: -7%;
+    right: 8%;
     z-index: -1;
-    left: -5%;
-    width: 15%;
     opacity: 0.5;
+    width: 214px;
+    height: 130px;
 }
 
-img.team-bg-ball {
+#tool-img-2 {
+	background-image: url([[pix:theme|tool-img-2]]);
+	position: absolute;
+    right: 0;
+    top: 20%;
+    z-index: -1;
+    opacity: 0.2;
+    -webkit-animation: updown 1s infinite alternate;
+    animation: updown 1s infinite alternate;
+    width: 125px;
+    height: 125px;
+}
+
+#tool-img-3 {
+	background-image: url([[pix:theme|tool-img-3]]);
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.5;
+    -webkit-animation: updown 1s infinite alternate;
+    animation: updown 1s infinite alternate;
+    width: 104px;
+    height: 104px;
+}
+
+#tool-img-4 {
+	background-image: url([[pix:theme|tool-img-4]]);
     position: absolute;
     top: 15%;
-    right: -8%;
     z-index: -1;
-    opacity: 0.5;
-    -webkit-animation: updown 1s infinite  alternate;
-    animation: updown 1s infinite  alternate;
-}
-
-img.team-bg-triangle {
-    position: absolute;
-    bottom: 5%;
-    right: 40%;
-    z-index: -1;
-    opacity: 0.5;
-    -webkit-animation: updown 1s infinite  alternate;
-    animation: updown 1s infinite  alternate;
-}
-
-img.team-bg-triangle-2 {
-    position: absolute;
-    top: 0;
-    left: -10%;
-    z-index: -1;
-    opacity: 0.5;
-    -webkit-animation: updown 1s infinite  alternate;
-    animation: updown 1s infinite  alternate;
-}
-
-img.team-bg-dots-2 {
-    position: absolute;
-    bottom: 12%;
-    z-index: -1;
-    right: -2%;
+    left: -2%;
     opacity: 0.3;
+    width: 292px;
+    height: 294px;
 }
 
 @-webkit-keyframes updown {
@@ -269,4 +281,25 @@ img.team-bg-dots-2 {
 @keyframes updown {
     0% { transform: translateY(0); }
     100% { transform: translateY(-7px); }
+}
+
+.tools .wrap-content .row {
+	display: flex;
+}
+
+.tools .wrap-content .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-wrap__right_content {
+    height: 100%;
+}
+
+#roadmapTab {
+	height: 100%;
+}
+
+.scroll-content {
+    height: 90%;
 }

@@ -4,7 +4,7 @@ section.fe-academy {
 }
 
 div#fe-academy-bg {
-    background-image: url(../images/fe-academy.png);
+    background-image: url([[pix:theme|fe-academy]]);
     background-size: cover;
     z-index: -1;
     position: absolute;
